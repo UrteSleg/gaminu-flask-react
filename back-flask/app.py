@@ -166,6 +166,7 @@ def create_category():
     except Exception as e:
         return {'success': False, 'response': 400, 'error': 'Bad request'}
 
+
 @app.route('/category/<id>', methods = ['DELETE'])
 @authenticate 
 def delete_category(id):
